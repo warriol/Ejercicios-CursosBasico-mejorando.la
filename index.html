@@ -1,0 +1,82 @@
+<!--
++ Programación Básica con Mejordandola: https://cursos.mejorando.la/
++ Script creado para el ejercicio de piedra, papel, tijera, lagarto, spock
++ ALumno: Wilson Denis Arriola @WilsonArriolaUY
++ Docente: John Freddy Vega @freddier
++ Octubre 2014
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Piedra, Papel y Tijera</title>
+	<script type="text/javascript" src="js/piedra.js"></script>
+	<link rel="stylesheet" href="css/css.css" />
+</head>
+<body>
+	<header>
+		<a href="https://cursos.mejorando.la/cursos/programacion-basica/"><img src="img/curso-mejorandola.jpg"></a>
+		<a href="https://mejorando.la/"><img id="logo" src="img/logo_verde.jpg"></a>
+		<div id="twitter">
+			<p>Profesor: <a href="https://twitter.com/freddier">@freddier</a></p>
+			<p>Alumno: <a href="https://twitter.com/WilsonArriolaUY">@WilsonArriolaUY</a></p>
+		</div>
+	</header>
+	<div id="contenedorGeneral">
+		<div id="contenedor">
+			<div class="header"><h1>Jan, Ken, Pon, ...... Lagarto y Spock XD!</h1></div>
+			<nav>
+				<ul id="menu">
+					<li><a href="#" onclick="jugar()">Jugar</a></li>
+					<li><a href="#" onclick="reiniciar()">Reiniciar</a></li>
+					<li><a href="#" onclick="ayuda()">Reglas</a></li>
+				</ul>
+				<div id="contenedorAyuda">
+					<div id="alertasBotonCerrar"><a href="#" onclick="ayuda()"><img src="img/cerrar.png"></a></div>
+					<div id="ayuda"><img src="img/piedra-papel-tijera-lagarto-spock.jpg"></div>
+				</div>
+				<div id="alertas">
+					<div id="alertasConteendor">
+						<div id="alertasBotonCerrar"><a href="#" onclick="cerrarAlertas()"><img src="img/cerrar.png"></a></div>
+						<h2>Resultado:</h2>
+						<div id="alertasMensaje">
+						</div>
+					</div>
+				</div>
+			</nav>
+			<section>
+				<div>
+					<h2>Selecciona tu Jugada</h2>
+					<fieldset id="jugador1">
+						<label>
+							<input type="radio" name="opcionJugador" value="lagarto" id="ckbLagarto" />
+							<label for="lagarto"></label><img src="img/lagarto.png">
+						</label>
+						<label>
+							<input type="radio" name="opcionJugador" value="spock" id="ckbSpock" />
+							<label for="spock"></label><img src="img/spock.png">
+						</label>
+						<label>
+							<input type="radio" name="opcionJugador" value="piedra" id="ckbPiedra" />
+							<label for="piedra"></label><img src="img/piedra.png">
+						</label>
+						<label>
+							<input type="radio" name="opcionJugador" value="papel" id="ckbPapel" />
+							<label for="papel"></label><img src="img/papel.png">
+						</label>
+						<label>
+							<input type="radio" name="opcionJugador" value="tijera" id="ckbTijera" />
+							<label for="tijera"></label><img src="img/tijera.png">
+						</label>
+					</fieldset>
+				</div>
+			</section>
+			<section>
+				<div id="tabla">
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer><p>Espero les haya gustado..... ^^</p></footer>
+</body>
+</html>
