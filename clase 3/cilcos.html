@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ciclos</title>
+	<script type="text/javascript">
+	var c,t,b;
+
+		function calcular(){
+			// alert("Gracias por tocarme")
+			// alert(t.value);
+			var numero = Number(t.value);
+			var calculo = 1;
+			var n = 1;
+			// while(n <= numero){
+			// 	calculo = calculo * n;
+			// 	n++;
+			// }
+			for(n=1; n <= numero; n++){
+				calculo = calculo * n;
+			}
+			c.innerHTML = calculo;
+		}
+
+		function inicio(){
+			c = document.getElementById("cajas");
+			t = document.getElementById("alejandra");
+			b = document.getElementById("botoncito");
+
+			b.addEventListener("click", calcular);
+
+			// var gritos = 10;
+
+			// // while ocurre mientras la condución sea verdadera
+			// while(gritos > 0){
+			// 	// iteraciones
+			// 	// c.innerHTML = c.innerHTML + "a";
+			// 	c.innerHTML += "a";
+			// 	// gritos = gritos - 1;
+			// 	gritos --;
+			// }
+			// c.innerHTML += "h!";
+
+			var	numero = 1;
+			var residuo;
+			while(numero <= 50){
+				residuo = numero % 2;
+				if(residuo == 0){
+					c.innerHTML += " " + numero;
+				}
+				numero++;
+			}
+			//minuto 17
+		}
+	</script>
+</head>
+<body>
+	<input type="text" id="alejandra" />
+	<input type="button" id="botoncito" value="Tocame" />
+	<div id="cajas"></div>
+	<div>Otra Caja</div>
+	<script type="text/javascript">
+		inicio();
+	</script>
+</body>
+</html>
