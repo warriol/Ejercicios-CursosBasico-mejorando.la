@@ -1,3 +1,8 @@
+﻿Ejercicios-CursosBasico-mejorando.la
+====================================
+
+Clase 2 - Elementos del DOM - Bombas aleatorias con Matrices.
+
 Ejercicios-CursosBasico-mejorando.la
 
 Juego Piedra, Papel, Tijera, Lagarto, Spock, hecho en HTML con JavaScrip. Ejercicio del Curso de Pogramacion Básica de mejorando.la.
